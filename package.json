@@ -1,9 +1,9 @@
 {
-  "name": "angular-seed",
+  "name": "angular-component-todo",
   "private": true,
   "version": "0.0.0",
-  "description": "A starter project for AngularJS",
-  "repository": "https://github.com/angular/angular-seed",
+  "description": "A component based todo project for AngularJS",
+  "repository": "https://github.com/AndyQW/angular-component-todo",
   "license": "MIT",
   "devDependencies": {
     "bower": "^1.7.7",
