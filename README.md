@@ -2,8 +2,6 @@
 
 This project based on from angular-seed  and https://github.com/tastejs/todomvc/tree/gh-pages/examples/angularjs
 
-git clone https://github.com/angular/angular-seed.git
-
 ## Install Dependencies
 
 We have two kinds of dependencies in this project: tools and angular framework code.  The tools help
