@@ -1,0 +1,9 @@
+'use strict';
+
+// Declare app level module which depends on views, and components
+angular.module('myApp', [
+  'ui.router'
+])
+.controller('MainController',['$rootScope', function($rootScope){
+    
+}]);
