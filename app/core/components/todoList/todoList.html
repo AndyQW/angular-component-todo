@@ -12,11 +12,11 @@
                         <li ng-repeat="todo in $ctrl.todos |filter: $ctrl.statusFilter track by $index" ng-class="{completed: todo.completed, editing: todo == editedTodo}">
                             <div class="view">
                                 <input class="toggle" type="checkbox" ng-model="todo.completed" ng-change="$ctrl.toggleCompleted(todo)">
-                                <label ng-dblclick="editTodo(todo)">{{todo.title}}</label>
+                                <label ng-dblclick="$ctrl.editTodo(todo)">{{todo.title}}</label>
                                 <button class="destroy" ng-click="$ctrl.removeTodo(todo)"></button>
                             </div>
-                            <form ng-submit="saveEdits(todo, 'submit')">
-                                <input class="edit" ng-trim="false" ng-model="todo.title" todo-escape="revertEdits(todo)" ng-blur="saveEdits(todo, 'blur')" todo-focus="todo == $ctrl.editedTodo">
+                            <form ng-submit="$ctrl.saveEdits(todo, 'submit')">
+                                <input class="edit" ng-trim="false" ng-model="todo.title" todo-escape="revertEdits(todo)" ng-blur="$ctrl.saveEdits(todo, 'blur')" todo-focus="todo == $ctrl.editedTodo">
                             </form>
                         </li>
                     </ul>
@@ -40,12 +40,5 @@
                 </footer>
             </section>
             <footer id="info">
-                <p>Double-click to edit a todo</p>
-                <p>Credits:
-                    <a href="http://twitter.com/cburgdorf">Christoph Burgdorf</a>,
-                    <a href="http://ericbidelman.com">Eric Bidelman</a>,
-                    <a href="http://jacobmumm.com">Jacob Mumm</a> and
-                    <a href="http://blog.igorminar.com">Igor Minar</a>
-                </p>
-                <p>Part of <a href="http://todomvc.com">TodoMVC</a></p>
+
             </footer>
